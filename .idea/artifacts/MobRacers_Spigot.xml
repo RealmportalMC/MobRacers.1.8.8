@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MobRacers Spigot">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="MobRacers.jar">
+      <element id="module-output" name="MobRacers" />
+      <element id="file-copy" path="$PROJECT_DIR$/configFR.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/langEN.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/langRU.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/purchases.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/langFR.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/langDE.yml" />
+      <element id="library" level="project" name="Core" />
+      <element id="file-copy" path="$PROJECT_DIR$/langES.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/changelog.txt" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src" />
+      <element id="dir-copy" path="$PROJECT_DIR$/../Core/src" />
+    </root>
+  </artifact>
+</component>

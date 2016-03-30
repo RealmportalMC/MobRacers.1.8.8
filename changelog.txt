@@ -1,0 +1,7 @@
+ - Added a permissions to remove vehicle spawning (using GUI only)
+ - Now permission to bypass auto join is no longer default to ops is no longer a children of the admin permission
+ - Now the standby scoreboard is in one entry in the lang file and lines are separated by \n use <players>, <maxplayers> and <server> placeholders are you need
+ - You can now configure in-game the item to leave, to select arenas, to select vehicles and the spectator compass. /mr setup set<leave|arena|vehicle|spectator>item it is saved in the setup.yml file
+ - Because of this, messages related to items are no longer used in the lang file. (Change your item's name/lore by yourself)
+ - More help message for the /mr setup command
+ - It is now less ugly when failing a command

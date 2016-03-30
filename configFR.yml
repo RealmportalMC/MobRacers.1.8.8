@@ -1,0 +1,168 @@
+#
+#Bonjour et bienvenue à la configuration de MobRacers
+#Si vous voulez réinitialiser ce ficher, supprimez le et rechargez le plugin
+#
+#N'OUBLIEZ PAS, si vous voulez utiliser ce fichier comme fichier de config (à la 
+#place de celui en anglais), supprimez config.yml et renommez ce fichier par config.yml
+#
+
+#base-speed est la vitesse de base des véhicules. Attention, une vitesse trop grande pourrait causer des bugs.
+#Tout les points reçu tout au long du jeu son multipliés par point-coefficient, ce qui vous laisse gérer l'économie du jeu
+#scoreboard-update-period est un option permettant de déterminer le temps entre chaque rafraîchissement du scoreboard en course
+base-speed: 1.0
+point-coefficient: 1.0
+scoreboard-update-period: 1
+
+#La duration de plusieurs timers
+#arena-selection-timer c'est le moment où les joueurs votent pour leur arène
+#vehicle-selection-timer c'est le moment où les joueurs choisissent leur véhicule
+#fireworks-timer c'est le moment en fin de partie ou le nom du gagnant est affiché à l'écran
+arena-selection-timer: 45
+vehicle-selection-timer: 30
+fireworks-timer: 5
+
+#Ceci est la météo du lobby, changez le temps avec time
+#time-locked est pour bloquer le cycle du jour et de la nuit
+#Tout cela ne change pas le temps du monde, c'est seulement côté client
+#La pluie sur un biome froid fera de la neige
+time: 6000
+time-locked: true
+raining: false
+
+#enable-stats permet d'activer ou de désactiver les stats. Il est recommandé pour les réseaux Bungee à plusieurs serveurs MobRacers d'activer cette option
+#enable-music permet d'activer ou de désactiver la musique
+#enable-rotation permet aux joueurs de rejouer quand la partie est terminée
+enable-stats: true
+enable-music: true
+enable-rotation: true
+
+#Remplace le système de points de MobRacers par celui de Vault
+#Notez que mettre "true" alors qu'il n'y a pas Vault permettra quand même de jouer mais sans utiliser vault
+enable-vault: false
+
+#Cette option laisse MobRacers changer le MOTD du serveur
+#Les messages utilisés comme MOTDs sont configurable dans le fichier lang
+#aux lignes: standby-status, arenaselect-status, vehicleselect-status et game-status
+#Ceci peut être énormément utile pour les réseaux Bungee avec plusieurs serveurs
+#où il y a besoin de montrer l'état du jeu
+enable-motd: false
+
+#Le message d'invitation est un message qui invite les joueurs à rejoindre lorsqu'un joueur join une partie vide
+#broadcast-worlds est une liste de mondes dans lesquels les joueurs reçoivent les messages d'invitation de de victoire. Vous pouvez mettre une liste de mondes, un seule monde, 'null' ou '*'. (* pour tout les mondes)
+invitation-message: false
+broadcast-worlds: 'null'
+
+#Ce mode auto-join permet aux joueurs de rejoindre instantanément le jeu en rejoinant le serveur.
+#Optimal pour les réseaux BungeeCord avec MobRacers seul sur le serveur
+#Les joueurs avec la permission de admin (MobRacers.admin) ne sont pas redirigé directement en jeu et ils peuvent quitter en utilisant la command
+#Le mode teleport-join permet aux joueurs de rejoindre quand ils se font téléporter dans la région et de quitter quand ils se font téléporter en dehors
+#Parfait pour des serveurs de type Multiverse avec des portails pour rejoindre les jeux
+#Les joueurs avec la permission de admin (MobRacers.admin) ne sont pas redirigé directement en jeu quand ils sont téléportés dans la région
+auto-join: false
+teleport-join: true
+
+#Vous n'avez pas besoin de configurer ceci à moins que vous soyez en mode auto-join
+#Ceci est le serveur du réseau Bungee vers lequel les joueurs seront envoyés à la fin d'une partie si vous êtes en mode rotation
+#ou si les joueurs quittent avec la commande ou le panneau
+exit-server: 'hub'
+
+#Si vous activez ceci, les joueurs seront en vert dans la liste des joueurs et ils auront un entête et un pied de page donnant quelques infos sur le jeu
+color-in-tab: true
+
+#Ceci est la fonctionnalité pour bloquer des commandes pour les joueurs en jeu seulement. 
+#Vous pouvez modifier ensuite la liste des commandes qui ne seront pas bloquées si vous activez cette fonctionnalité.
+block-commands: true
+allowed-commands:
+  - blockfarmers
+  - bf
+  - farm
+  - farmers
+  - blockf
+  - bfarmers
+  - reload
+  - ban
+  - mute
+  - kick
+
+#Voulez vous utilisez les noms ou les "displaynames" ? Les displaynames peuvent inclure le surnom Essentials et le grade du joueur
+use-displaynames: false
+
+#Le nombre minimum de joueurs ne peut être plus petit que 2 et le maximum ne peut être ce que vous voulez
+#Vous pouvez mettre -1 en max-players pour qu'il n'y ait pas de limite
+min-players: 2
+max-players: 16
+
+#Utilisez les commandes de fin de partie pour synchroniser MobRacers avec votre économie ou plus !
+#Le nom du gagnant peu être utilisé avec <first> et c'est la même chose pour le deuxième <second>, le troisième <third> et le dernier <last>
+#
+#Retirez les '#'s pour l'activer
+#endgame-commands:
+#  - 'broadcast <last> a perdu ! Hahaha'
+#  - 'give <first> minecraft:diamond 1'
+
+#Voulez vous enregistrer les états des joueurs pour qu'ils reprennent tout après avoir jouer ? true/false
+#Cette option est optimale pour le factions, elle permet de conserver l'inventaire de chaque joueurs
+#Il n'y a plus moyen d'obtenir de la vie ou de la nourriture en profitant de MobRacers avec cette option d'activée
+#De plus, cette option vous permet de sauter l'étape de mettre une sortie au jeu puisque les joueurs sont téléportés à leur ancienne position
+#Liste des trucs enregistrés par cette fonctionnalité:
+#La position, la vélocité et la distance de chute
+#L'inventaire, l'armure et même l'item sur le curseur
+#La vie, la nourriture, la saturation de la nourriture et la fatigue
+#Les ticks de feu et le temps d'air qu'il lui reste à respirer
+#Le mode de jeu, sa permission de voler et son vol lui même
+#Sa vitesse de marche et de vol
+#Tout ses effets de potions
+keep-player-states: false
+
+#Cette option active les messages envoyés aux admins lorsqu'ils rejoignent le serveur et MobRacers n'est pas à jour
+#Je vous recommande de le laisser à "true" mais vous pouvez toujours le désactiver si besoin est
+update-notifications: true
+
+#Voulez vous que les spectateurs et les joueurs ayant terminés soit en gamemode spectateur ?
+#Par contre, ils ne pourront plus utiliser leur items de spectateurs.
+gamemode-3-spectators: false
+
+#Voulez vous que le plugin injecte automatiquement les messages manquant dans votre fichier lang ?
+#Cette fonctionnalitée est utile lorsque vous avez des messages manquant mais brise
+#l'indentation du fichier puisque le fichier est chargé puis sauvegardé.
+#Si vous désactivez cette option, les messages manquant enverront leur chemin aux
+#utilisateur à la place du contenu.
+#
+#inject-from est le fichier depuis le ficher lang est injecté de nouveaux messages
+#Si vous voulez utiliser MobRacers en français, il est conseillé d'utiliser langFR.yml
+inject-lang-file: true
+inject-from: "langFR.yml"
+
+#Configure la connexion de MobRacers à une base de données
+#Désactiver le SQL sans désactiver les stats plus haut utilise les
+#userdatas en fichier YAML pour sauvegarder les stats
+#Le plugin supportes presque tout les bases de données tant qu'elles
+#sont compatible JDBC et qu'elle supportent les types TEXT
+#
+#Exemples de drivers & et d'urls:
+#  com.mysql.jdbc.Driver
+#  jdbc:mysql://localhost:3306/yourdatabase
+#
+#  org.sqlite.JDBC
+#  jdbc:sqlite:/C:/Users/you/yourdatabase
+#
+sql-enabled: false
+sql-driver: com.example.jdbc.Driver
+sql-url: jdbc:example://localhost:3306/minecraft_db
+sql-user: mobracers_admin
+sql-password: secret
+
+#Cette option permet de rediriger les commandes MobRacers en commandes simples
+#Par exemple, /mr leave peut être éxécuter avec /leave etc. mais seulement en jeu
+#C'est juste une redirection par contre, les commandes ne sont pas
+bind-subcommands: true
+
+#Voulez empêcher les mobs qui ne sont pas des véhicules d'apparaître dans la course ?
+#Je vous recommande de le laisser à true mais c'est comme vous le voulez.
+#Protéger l'arène bloque l'eau, le sable qui tombe, le feu etc.
+#Très recommendé puisque certains items peuvent mettre le feu ou détruire des blocs près de l'eau
+cancel-spawning: true
+protect-arenas-and-lobby: true
+
+#Spécialement pour bungee, cette option désactive les messages de connexions des joueurs
+disable-vanilla-messages: false
