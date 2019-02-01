@@ -112,7 +112,7 @@ public enum VehicleType
 	private Class<? extends Vehicle> vehicleClass;
 	private TypeCondition condition;
 	
-	private VehicleType(Class<? extends Vehicle> vehicleClass, TypeCondition condition)
+	VehicleType(Class<? extends Vehicle> vehicleClass, TypeCondition condition)
 	{
 		this.vehicleClass = vehicleClass;
 		this.condition = condition;
@@ -156,9 +156,9 @@ public enum VehicleType
 		return null;
 	}
 	
-	private static interface TypeCondition
+	private interface TypeCondition
 	{
-		public boolean isType(Entity entity);
+		boolean isType(Entity entity);
 	}
 	
 	public static TypeCondition getConditionByEntityType(final EntityType type)

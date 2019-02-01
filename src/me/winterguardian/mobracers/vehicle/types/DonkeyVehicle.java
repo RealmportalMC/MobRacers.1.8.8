@@ -58,9 +58,9 @@ public class DonkeyVehicle extends WinnableVehicle
 		switch(type)
 		{
 		case SUGAR:
-			return new SugarItem(new SoundEffect(Sound.DONKEY_IDLE, 1, 1f));
+			return new SugarItem(new SoundEffect(Sound.ENTITY_DONKEY_AMBIENT, 1, 1f));
 		case WALL:
-			return new WallItem(Arrays.asList(new WallBlock(Material.HAY_BLOCK, (byte)0), new WallBlock(Material.HAY_BLOCK, (byte)4), new WallBlock(Material.HAY_BLOCK, (byte)8), new WallBlock(Material.WOOD, (byte)1)), new SoundEffect(Sound.DONKEY_ANGRY, 1, 1f));
+			return new WallItem(Arrays.asList(new WallBlock(Material.HAY_BLOCK, (byte)0), new WallBlock(Material.HAY_BLOCK, (byte)4), new WallBlock(Material.HAY_BLOCK, (byte)8), new WallBlock(Material.WOOD, (byte)1)), new SoundEffect(Sound.ENTITY_DONKEY_ANGRY, 1, 1f));
 		case SPECIAL:
 			return new DonkeySpecialItem();
 		default:

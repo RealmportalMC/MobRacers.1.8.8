@@ -61,9 +61,9 @@ public class SkeletonHorseVehicle extends VipVehicle
 		switch(type)
 		{
 		case SUGAR:
-			return new SugarItem(new SoundEffect(Sound.SKELETON_IDLE, 1, 1.1f));
+			return new SugarItem(new SoundEffect(Sound.ENTITY_SKELETON_AMBIENT, 1, 1.1f));
 		case WALL:
-			return new WallItem(Arrays.asList(new WallBlock(Material.HUGE_MUSHROOM_2, (byte)10)), new SoundEffect(Sound.SKELETON_HURT, 1, 0.8f));
+			return new WallItem(Arrays.asList(new WallBlock(Material.HUGE_MUSHROOM_2, (byte)10)), new SoundEffect(Sound.ENTITY_SKELETON_HURT, 1, 0.8f));
 		case SPECIAL:
 			return new SkeletonHorseSpecialItem();
 		default:

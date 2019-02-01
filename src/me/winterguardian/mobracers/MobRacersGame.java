@@ -84,20 +84,20 @@ public class MobRacersGame extends StateGame implements SekaiGame
             @Override
             public boolean isEnabled()
             {
-				return ((MobRacersConfig)getConfig()).enableMOTD();
+				return getConfig().enableMOTD();
             }
         }, getPlugin());
 	}
 	
 	public void savePlayerState(Player player)
 	{
-		if(((MobRacersConfig) this.getConfig()).keepPlayerStates())
+		if(this.getConfig().keepPlayerStates())
 			this.playerStates.add(new PlayerState(player));
 	}
 	
 	public void applyPlayerState(Player player)
 	{
-		if(!((MobRacersConfig) this.getConfig()).keepPlayerStates())
+		if(!this.getConfig().keepPlayerStates())
 			return;
 		PlayerState toRemove = null;
 		for(PlayerState state : this.playerStates)
@@ -234,7 +234,7 @@ public class MobRacersGame extends StateGame implements SekaiGame
 	
 	protected Message getInvitationMessage()
 	{
-		if(((MobRacersConfig) this.getConfig()).isInvitationMessage())
+		if(this.getConfig().isInvitationMessage())
 			return CourseMessage.JOIN_INVITATIONMESSAGE;
 		return null;
 	}
@@ -289,8 +289,8 @@ public class MobRacersGame extends StateGame implements SekaiGame
 		if(getSetup().getRegion() == null)
 			return false;
 
-		if(!((MobRacersConfig)getConfig()).isNoVehicleSpawns())
-			for(SerializableLocation loc : ((MobRacersSetup)getSetup()).getVehicleLocations().values())
+		if(!getConfig().isNoVehicleSpawns())
+			for(SerializableLocation loc : getSetup().getVehicleLocations().values())
 			{
 				if(loc == null)
 					return false;
@@ -298,7 +298,7 @@ public class MobRacersGame extends StateGame implements SekaiGame
 					return false;
 			}
 		
-		return getSetup().getLobby() != null && (getSetup().getExit() != null || getConfig().isAutoJoin() || ((MobRacersConfig) getConfig()).keepPlayerStates());
+		return getSetup().getLobby() != null && (getSetup().getExit() != null || getConfig().isAutoJoin() || getConfig().keepPlayerStates());
 	}
 	
 	@Override

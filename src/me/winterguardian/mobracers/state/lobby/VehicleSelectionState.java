@@ -108,9 +108,8 @@ public class VehicleSelectionState extends WaitingState implements VehicleState
 			this.vehicles.get(p).remove();
 			this.vehicles.remove(p);
 		}
-		
-		if(this.musics.containsKey(p))
-			this.musics.remove(p);
+
+		this.musics.remove(p);
 
 		if(getGame().getConfig().isColorInTab())
 			p.setPlayerListName(null);

@@ -22,7 +22,7 @@ public class MellohiAchievement extends CourseAchievement
 	@Override
 	public boolean isComplete(Player p)
 	{
-		if(!((MobRacersConfig)MobRacersPlugin.getGame().getConfig()).enableStats())
+		if(!MobRacersPlugin.getGame().getConfig().enableStats())
 			return true;
 		
 		return CourseStats.get(p).getVehicleVictories(VehicleType.UNDEAD_HORSE.name()) >= victories;

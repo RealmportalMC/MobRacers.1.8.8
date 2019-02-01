@@ -81,9 +81,9 @@ public class HorseVehicle extends Vehicle
 		switch(type)
 		{
 		case SUGAR:
-			return new SugarItem(new SoundEffect(Sound.HORSE_GALLOP, 1, 1f));
+			return new SugarItem(new SoundEffect(Sound.ENTITY_HORSE_GALLOP , 1, 1f));
 		case WALL:
-			return new WallItem(Arrays.asList(new WallBlock(Material.HAY_BLOCK, (byte)0), new WallBlock(Material.HAY_BLOCK, (byte)4), new WallBlock(Material.HAY_BLOCK, (byte)8)), new SoundEffect(Sound.HORSE_IDLE, 1, 1f));
+			return new WallItem(Arrays.asList(new WallBlock(Material.HAY_BLOCK, (byte)0), new WallBlock(Material.HAY_BLOCK, (byte)4), new WallBlock(Material.HAY_BLOCK, (byte)8)), new SoundEffect(Sound.ENTITY_HORSE_AMBIENT, 1, 1f));
 		case SPECIAL:
 			return new HorseSpecialItem();
 		default:

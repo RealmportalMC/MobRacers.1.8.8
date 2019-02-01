@@ -82,7 +82,7 @@ public class CoursePurchase
 	
 	public boolean hasPurchased(Player p)
 	{
-		if(!((MobRacersConfig)MobRacersPlugin.getGame().getConfig()).enableStats())
+		if(!MobRacersPlugin.getGame().getConfig().enableStats())
 			return true;
 		
 		return this.hasPurchased(new CourseStats(p, Core.getUserDatasManager().getUserData(p)));

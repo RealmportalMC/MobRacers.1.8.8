@@ -56,9 +56,9 @@ public class SuperSheepVehicle extends WinnableVehicle
 		switch(type)
 		{
 		case SUGAR:
-			return new SugarItem(new SoundEffect(Sound.SHEEP_IDLE, 1, 1.65f));
+			return new SugarItem(new SoundEffect(Sound.ENTITY_SHEEP_AMBIENT, 1, 1.65f));
 		case WALL:
-			return new WallItem(Arrays.asList(new WallBlock(Material.WOOL, (byte)14), new WallBlock(Material.WOOL, (byte)1), new WallBlock(Material.WOOL, (byte)3), new WallBlock(Material.WOOL, (byte)4), new WallBlock(Material.WOOL, (byte)5), new WallBlock(Material.WOOL, (byte)3), new WallBlock(Material.WOOL, (byte)11), new WallBlock(Material.WOOL, (byte)10)), new SoundEffect(Sound.SHEEP_IDLE, 1, 0.8f));
+			return new WallItem(Arrays.asList(new WallBlock(Material.WOOL, (byte)14), new WallBlock(Material.WOOL, (byte)1), new WallBlock(Material.WOOL, (byte)3), new WallBlock(Material.WOOL, (byte)4), new WallBlock(Material.WOOL, (byte)5), new WallBlock(Material.WOOL, (byte)3), new WallBlock(Material.WOOL, (byte)11), new WallBlock(Material.WOOL, (byte)10)), new SoundEffect(Sound.ENTITY_SHEEP_AMBIENT, 1, 0.8f));
 		case SPECIAL:
 			return new SuperSheepSpecialItem();
 		default:

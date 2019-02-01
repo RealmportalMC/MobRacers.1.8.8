@@ -83,7 +83,7 @@ public class MinecartVehicle extends Vehicle
 			
 			if(RideableEntityUtil.isRideable(this.entity))
 			{
-				setSpeed(((MobRacersConfig) MobRacersPlugin.getGame().getConfig()).getBaseSpeed());
+				setSpeed(MobRacersPlugin.getGame().getConfig().getBaseSpeed());
 				RideableEntityUtil.setClimbHeight(entity, 1f);
 				RideableEntityUtil.setJumpHeight(entity, 0);
 				RideableEntityUtil.setJumpThrust(entity, 0);

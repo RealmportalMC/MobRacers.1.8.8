@@ -166,7 +166,7 @@ public class GamePlayerData extends PlayerData
 				else
 					getPlayer().sendMessage(CourseMessage.GAME_PASSMAINLINE_NORMAL.toString().replace("<current>", "" + (this.lap + 1)).replace("<laps>", "" + this.currentGame.getArena().getLaps()));
 				
-				getPlayer().playSound(getPlayer().getEyeLocation(), Sound.ANVIL_USE, 10f, 0.9f);
+				getPlayer().playSound(getPlayer().getEyeLocation(), Sound.BLOCK_ANVIL_USE, 10f, 0.9f);
 			}
 			
 		}
@@ -324,7 +324,7 @@ public class GamePlayerData extends PlayerData
 			pitch = 0.6F;
 		
 		for(Player p : currentGame.getGame().getPlayers())
-			p.playSound(p.getEyeLocation(), Sound.NOTE_PLING, 10f, pitch);
+			p.playSound(p.getEyeLocation(), Sound.BLOCK_NOTE_PLING, 10f, pitch);
 		
 		String name = getPlayer().getName();
 		
@@ -574,7 +574,7 @@ public class GamePlayerData extends PlayerData
 				currentItem = ((RandomItem)currentItem).getCurrentItem();
 				currentGame.getItems().add(currentItem);
 				
-				getPlayer().playSound(getPlayer().getLocation(), Sound.NOTE_PLING, 5, 2);
+				getPlayer().playSound(getPlayer().getLocation(), Sound.BLOCK_NOTE_PLING, 5, 2);
 				changeItemTaskId = -1;
 				
 				return;
@@ -584,7 +584,7 @@ public class GamePlayerData extends PlayerData
 			getPlayer().getInventory().setItem(0, currentItem.getItemStack());
 			changeItemTaskId = Bukkit.getScheduler().runTaskLater(currentGame.getGame().getPlugin(), new ChangeItem(this.switchChances - 0.03f, this.delay + 1), 1).getTaskId();
 			
-			getPlayer().playSound(getPlayer().getLocation(), Sound.CLICK, 5, 1.4f);
+			getPlayer().playSound(getPlayer().getLocation(), Sound.UI_BUTTON_CLICK , 5, 1.4f);
 		}
 		
 	}

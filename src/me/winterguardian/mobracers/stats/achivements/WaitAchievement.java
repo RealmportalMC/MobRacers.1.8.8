@@ -22,7 +22,7 @@ public class WaitAchievement extends CourseAchievement
 	@Override
 	public boolean isComplete(Player p)
 	{
-		if(!((MobRacersConfig)MobRacersPlugin.getGame().getConfig()).enableStats())
+		if(!MobRacersPlugin.getGame().getConfig().enableStats())
 			return true;
 		
 		return CourseStats.get(p).getVehicleGamesPlayed(VehicleType.WOLF.name()) >= games;

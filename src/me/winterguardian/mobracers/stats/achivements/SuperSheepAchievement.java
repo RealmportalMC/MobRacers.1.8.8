@@ -22,7 +22,7 @@ public class SuperSheepAchievement extends CourseAchievement
 	@Override
 	public boolean isComplete(Player p)
 	{
-		if(!((MobRacersConfig)MobRacersPlugin.getGame().getConfig()).enableStats())
+		if(!MobRacersPlugin.getGame().getConfig().enableStats())
 			return true;
 		
 		if(CourseStats.get(p).isAchievementComplete("achievement.super_sheep"))

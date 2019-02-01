@@ -124,9 +124,9 @@ public class MobRacersPlugin extends JavaPlugin
 		VOTE.addParent(PLAY, true);
 		CMD_PROTECT_BYPASS.addParent(ADMIN, true);
 
-		if(((MobRacersConfig)game.getConfig()).enableStats())
+		if(game.getConfig().enableStats())
 		{
-			MobRacersConfig config = (MobRacersConfig)game.getConfig();
+			MobRacersConfig config = game.getConfig();
 			if(config.isSqlEnabled())
 				Core.getUserDatasManager().enableDB(this, config.getSqlDriver(), config.getSqlURL(), config.getSqlUser(), config.getSqlPassword(), CourseStats.getTables());
 			else
@@ -134,7 +134,7 @@ public class MobRacersPlugin extends JavaPlugin
 
 			ArenaStats.init();
 
-			if(((MobRacersConfig) game.getConfig()).enableVault() && getServer().getPluginManager().getPlugin("Vault") != null)
+			if(game.getConfig().enableVault() && getServer().getPluginManager().getPlugin("Vault") != null)
 			{
 				vault = new VaultSupport();
 				if(vault.isEnabled())

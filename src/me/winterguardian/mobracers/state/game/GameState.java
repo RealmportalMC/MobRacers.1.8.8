@@ -539,14 +539,14 @@ public class GameState implements VehicleState
 				{
 					TitleUtil.displayTitle(p, JsonUtil.toJson(color + (i - max)), null, 0, 30, 0);
 					if(noteBass)
-						p.playSound(p.getEyeLocation(), Sound.NOTE_BASS, 10f, 1f);
+						p.playSound(p.getEyeLocation(), Sound.BLOCK_NOTE_BASS, 10f, 1f);
 				}
 				break;
 			case 0:
 				for(Player p : game.getPlayers())
 				{
 					TitleUtil.displayTitle(p, "{text:\"\"}", JsonUtil.toJson(CourseMessage.GAME_GO.toString()), 0, 30, 10);
-					p.playSound(p.getEyeLocation(), Sound.FIREWORK_BLAST, 10f, 0.6f);
+					p.playSound(p.getEyeLocation(), Sound.ENTITY_FIREWORK_BLAST, 10f, 0.6f);
 				}
 				GameState.this.raceStart = System.nanoTime();
 				started = true;

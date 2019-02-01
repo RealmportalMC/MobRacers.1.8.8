@@ -22,7 +22,7 @@ public class StalAchievement extends CourseAchievement
 	@Override
 	public boolean isComplete(Player p)
 	{
-		if(!((MobRacersConfig)MobRacersPlugin.getGame().getConfig()).enableStats())
+		if(!MobRacersPlugin.getGame().getConfig().enableStats())
 			return true;
 		
 		return this.getPassings(p) >= this.passings;

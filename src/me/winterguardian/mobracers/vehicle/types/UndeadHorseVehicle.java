@@ -67,7 +67,7 @@ public class UndeadHorseVehicle extends PurchasableVehicle
 		switch(type)
 		{
 		case SUGAR:
-			return new SugarItem(new SoundEffect(Sound.ZOMBIE_IDLE, 1, 1.1f));
+			return new SugarItem(new SoundEffect(Sound.ENTITY_ZOMBIE_AMBIENT , 1, 1.1f));
 		case WALL:
 			return new WallItem(Arrays.asList(new WallBlock(Material.STAINED_CLAY, (byte)13)), new SoundEffect(Sound.ZOMBIE_PIG_ANGRY, 1, 1f));
 		case SPECIAL:
