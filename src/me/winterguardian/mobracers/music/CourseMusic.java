@@ -112,7 +112,7 @@ public class CourseMusic
 	
 	public static List<CourseMusic> getAvailable(Player p)
 	{
-		if(!((MobRacersConfig)MobRacersPlugin.getGame().getConfig()).enableStats())
+		if(!MobRacersPlugin.getGame().getConfig().enableStats())
 			return Arrays.asList(values());
 
 		List<CourseMusic> available = new ArrayList<CourseMusic>();
