@@ -103,7 +103,7 @@ public class ChickenSpecialItem extends SpecialItem implements Listener, Runnabl
 		Egg egg = (Egg) vehicle.getEntity().getWorld().spawnEntity(loc, EntityType.EGG);
 		egg.setShooter(player);
 		egg.setVelocity(new Vector(-Math.sin(Math.toRadians(-player.getLocation().getYaw())) * 3, 0.5, -Math.cos(Math.toRadians(-player.getLocation().getYaw())) * 3));
-		new SoundEffect(Sound.CHICKEN_EGG_POP, 1, 1).play(MobRacersPlugin.getGame().getPlayers(), loc);
+		new SoundEffect(Sound.ENTITY_CHICKEN_EGG , 1, 1).play(MobRacersPlugin.getGame().getPlayers(), loc);
 		new ParticleData(ParticleType.EXPLOSION_LARGE, 0, 0, 0, 0, 1, new int[0]).apply(loc);
 	}
 	

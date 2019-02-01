@@ -90,7 +90,7 @@ public class GameListener implements Listener
 			if(playerData.getLastItemUse() + 500000000 > System.nanoTime())
 				return;
 			
-			if(playerData.isFinished() && ((MobRacersConfig) this.game.getConfig()).gamemode3Spectators() && !inventoryOpen)
+			if(playerData.isFinished() && this.game.getConfig().gamemode3Spectators() && !inventoryOpen)
 				return;
 			
 			ItemResult result = playerData.useItem(slot);
@@ -102,7 +102,7 @@ public class GameListener implements Listener
 		}
 		else if(spectatorData != null)
 		{
-			if(((MobRacersConfig) this.game.getConfig()).gamemode3Spectators() && !inventoryOpen)
+			if(this.game.getConfig().gamemode3Spectators() && !inventoryOpen)
 				return;
 			spectatorData.useItem(slot);
 			if(event != null)

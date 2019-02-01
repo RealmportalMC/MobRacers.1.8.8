@@ -48,10 +48,10 @@ public class MobRacersHook extends PlaceholderHook
 			return game.getMaxPlayers() + "";
 		
 		if(id.equalsIgnoreCase("pointcoeff"))
-			return ((MobRacersConfig) game.getConfig()).getPointCoefficient() + "";
+			return game.getConfig().getPointCoefficient() + "";
 		
 		if(id.equalsIgnoreCase("pointcoeffpercent"))
-			return MathUtil.round(((MobRacersConfig) game.getConfig()).getPointCoefficient() * 100, 2) + "%";
+			return MathUtil.round(game.getConfig().getPointCoefficient() * 100, 2) + "%";
 		
 		if(id.equalsIgnoreCase("status"))
 			return game.getStatus();
@@ -118,7 +118,7 @@ public class MobRacersHook extends PlaceholderHook
 			
 			if(id.split("_")[2].equalsIgnoreCase("ranking"))
 			{
-				if(!((MobRacersConfig) game.getConfig()).enableStats())
+				if(!game.getConfig().enableStats())
 					return "";
 				
 				ArenaStats stats = ArenaStats.getStats(arena.getName());

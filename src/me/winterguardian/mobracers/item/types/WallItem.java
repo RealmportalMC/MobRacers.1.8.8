@@ -44,7 +44,7 @@ public class WallItem extends Item
 		this.blocks.add(new WallBlock(Material.WOOD, (byte) 3));
 		this.blocks.add(new WallBlock(Material.WOOD, (byte) 4));
 		this.blocks.add(new WallBlock(Material.WOOD, (byte) 5));
-		this.sound = new SoundEffect(Sound.DOOR_CLOSE, 1, 1);
+		this.sound = new SoundEffect(Sound.BLOCK_WOODEN_DOOR_CLOSE, 1, 1);
 	}
 	
 	public WallItem(List<WallBlock> blocks, SoundEffect sound)

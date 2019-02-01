@@ -33,7 +33,7 @@ public class RegionProtectionListener implements Listener
 	@EventHandler
 	public void onBlockBurn(BlockBurnEvent event)
 	{
-		if(!((MobRacersConfig)game.getConfig()).protectArenasAndLobby())
+		if(!game.getConfig().protectArenasAndLobby())
 			return;
 
 		if(game.getSetup().getRegion() != null && game.getSetup().getRegion().contains(event.getBlock().getLocation()))
@@ -55,7 +55,7 @@ public class RegionProtectionListener implements Listener
 	@EventHandler
 	public void onBlockForm(BlockFormEvent event)
 	{
-		if(!((MobRacersConfig)game.getConfig()).protectArenasAndLobby())
+		if(!game.getConfig().protectArenasAndLobby())
 			return;
 
 		if(game.getSetup().getRegion() != null && game.getSetup().getRegion().contains(event.getBlock().getLocation()))
@@ -77,7 +77,7 @@ public class RegionProtectionListener implements Listener
 	@EventHandler
 	public void onBlockGrow(BlockGrowEvent event)
 	{
-		if(!((MobRacersConfig)game.getConfig()).protectArenasAndLobby())
+		if(!game.getConfig().protectArenasAndLobby())
 			return;
 
 		if(game.getSetup().getRegion() != null && game.getSetup().getRegion().contains(event.getBlock().getLocation()))
@@ -99,7 +99,7 @@ public class RegionProtectionListener implements Listener
 	@EventHandler
 	public void onBlockFade(BlockFadeEvent event)
 	{
-		if(!((MobRacersConfig)game.getConfig()).protectArenasAndLobby())
+		if(!game.getConfig().protectArenasAndLobby())
 			return;
 
 		if(game.getSetup().getRegion() != null && game.getSetup().getRegion().contains(event.getBlock().getLocation()))
@@ -121,7 +121,7 @@ public class RegionProtectionListener implements Listener
 	@EventHandler
 	public void onBlockFormTo(BlockFromToEvent event)
 	{
-		if(!((MobRacersConfig)game.getConfig()).protectArenasAndLobby())
+		if(!game.getConfig().protectArenasAndLobby())
 			return;
 
 		if(game.getSetup().getRegion() != null && game.getSetup().getRegion().contains(event.getBlock().getLocation()))
@@ -143,7 +143,7 @@ public class RegionProtectionListener implements Listener
 	@EventHandler
 	public void onBlockPhysics(BlockPhysicsEvent event)
 	{
-		if(!((MobRacersConfig)game.getConfig()).protectArenasAndLobby())
+		if(!game.getConfig().protectArenasAndLobby())
 			return;
 
 		if(game.getSetup().getRegion() != null && game.getSetup().getRegion().contains(event.getBlock().getLocation()))
@@ -165,7 +165,7 @@ public class RegionProtectionListener implements Listener
 	@EventHandler
 	public void onBlockSpread(BlockSpreadEvent event)
 	{
-		if(!((MobRacersConfig)game.getConfig()).protectArenasAndLobby())
+		if(!game.getConfig().protectArenasAndLobby())
 			return;
 
 		if(game.getSetup().getRegion() != null && game.getSetup().getRegion().contains(event.getBlock().getLocation()))
@@ -187,7 +187,7 @@ public class RegionProtectionListener implements Listener
 	@EventHandler
 	public void onLeavesDecay(LeavesDecayEvent event)
 	{
-		if(!((MobRacersConfig)game.getConfig()).protectArenasAndLobby())
+		if(!game.getConfig().protectArenasAndLobby())
 			return;
 
 		if(game.getSetup().getRegion() != null && game.getSetup().getRegion().contains(event.getBlock().getLocation()))
@@ -233,7 +233,7 @@ public class RegionProtectionListener implements Listener
 	@EventHandler
 	public void onItemSpawn(ItemSpawnEvent event)
 	{
-		if(!((MobRacersConfig)game.getConfig()).cancelSpawning())
+		if(!game.getConfig().cancelSpawning())
 			return;
 
 		if(game.getSetup().getRegion() != null && game.getSetup().getRegion().contains(event.getLocation()))
@@ -255,7 +255,7 @@ public class RegionProtectionListener implements Listener
 	@EventHandler
 	public void onCreatureSpawn(CreatureSpawnEvent event)
 	{
-		if(!((MobRacersConfig)game.getConfig()).cancelSpawning())
+		if(!game.getConfig().cancelSpawning())
 			return;
 
 		if(event.getSpawnReason() == CreatureSpawnEvent.SpawnReason.CUSTOM)
