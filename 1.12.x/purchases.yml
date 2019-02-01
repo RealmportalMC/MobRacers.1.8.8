@@ -1,0 +1,22 @@
+vehicle:
+  cow:
+    price: 2000
+  slime:
+    price: 2000
+  rabbit:
+    price: 2000
+  squid:
+    price: 2000
+  undead_horse:
+    price: 2000
+  wolf:
+    price: 2000
+  chicken:
+    price: 2000
+disc:
+  chirp:
+    price: 200
+  mall:
+    price: 200
+  strad:
+    price: 200
