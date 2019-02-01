@@ -1,0 +1,568 @@
+#=====
+#This file is the german version of the MobRacers lang.yml file, ignore it if you don't want to play in german.
+#=====
+#
+#A big thanks to Nick18999 for translating this file in german !
+#To use this file as the lang file, delete lang.yml and rename langDE.yml to lang.yml
+#Enjoy !
+#
+prefix: '&f&lMob&2&lRacers &f&l> '
+separator-cantselectvehicle: '&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-&4&m-&f&m-'
+separator-selectvehicle: '&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-&2&m-&f&m-'
+separator-achievement: '&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-&d&m-&f&m-'
+separator-purchase: '&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-&6&m-&f&m-'
+join: '&b<player> &6betritt den Server'
+join-alreadyingame: '&cDu bist bereits InGame'
+join-gamenotready: '&cDiese Runde kann nicht gestartet werden!'
+join-maxplayers: '&cDiese Runde ist voll!'
+join-someonehasjoin: <player> has initiated a race! Click here to join.
+leave-notingame: '&cDu spielst nicht!'
+leave: '&b<player> &6verlässt die Runde'
+leave-cantleaveautojoin: Um das Spiel zu verlassen mache /hub
+standby-status: Es sind nicht genügend Spieler zum Start online!
+standby-notenoughtplayers: '&cEs sind nicht ausreichend Spieler online um die Runde
+  zu starten!'
+standby-notenoughtplayerstocontinue: '&cEs sind nicht genügend Spieler online um die
+  Runde fortzuführen!'
+
+standby-board-header: '&dRacers'
+standby-board: " \n&cWarte auf\n&cSpieler\n&czum Start\n  "
+
+standby-tabheader: '&f&lMob&2&lRacers &f&l>'
+standby-tabfooter: '&cWarte auf weitere Spieler ...'
+arenaselect-startorjoin: Vote jetzt für eine Map
+arenaselect-invalidarena: '&cDiese Map gibt es nicht!'
+arenaselect-firstvote: '&6Du hast für eine Map gevotet!'
+arenaselect-samearena: '&cDu hast bereits für diese Map gevotet!'
+arenaselect-changevote: '&6Du hast dich umentschieden'
+arenaselect-status: '&6The players are currently voting for their arena.'
+arenaselect-timer: '&6Das Fahrzeugvoting beginnt in &b<time> &6Sekunde(n).'
+arenaselect-arenaselected: '&6Die Map &b<arena> &6gewinnt das Voting!'
+arenaselect-tabheader: '&7[&dRacers&7]'
+arenaselect-tabfooter-novote: '&6Vote jetzt für eine Map'
+arenaselect-tabfooter-voted: '&6Du hast gevotet für &b<arena>'
+arenaselect-board-header: '&dRacers'
+arenaselect-board-arena: '&6Map:'
+arenaselect-board-arenaauthor: '&6Ersteller:'
+arenaselect-board-othervotes: '&6Votes:'
+
+arenaselect-gui-inv: "§2§lSelect your arena !"
+arenaselect-gui-item: "§a§lClick to select an arena"
+
+vehicleselect-tabheader: '&f&lMob&2&lRacers &f&l> '
+vehicleselect-tabfooter-novehicle: '&6Suche dir ein Fahrzeug.'
+vehicleselect-tabfooter-selected: '&6Du hast dir ein Fahrzeug ausgesucht: &b<vehicle>'
+vehicleselect-board-header: '&dRacers'
+vehicleselect-board-arena: '&6Arena:'
+vehicleselect-board-vehicles: '&6Fahrzeuge:'
+vehicleselect-board-selectedvehicle: '&6Fahrzeug:'
+vehicleselect-board-records: '&6Musik:'
+vehicleselect-board-points: '&6Punkte:'
+vehicleselect-cantselect-vip: '&6Du brauchst Premium um dieses Fahrzeug freizuschalten!'
+vehicleselect-cantselect-achievement: '&6Du benötigst eine Erungenschaft um dieses
+  Fahrzeug freizuschalten:'
+vehicleselect-cantselect-purchase: '&6Du kannst dieses Fahrzeug kaufen für &b<points>
+  &6Punkte.'
+vehicleselect-cantselect-unknow: '&cDieses Fahrzeug gibt es nicht!'
+vehicleselect-clicktobuy: Klicke hier um das Fahrzeug zu kaufen!
+vehicleselect-join: Wähle nun dein Fahrzeug für folgende Map &b<arena>&6.
+vehicleselect-justselected: '&6Du hast dein Fahrzeug ausgewählt!'
+vehicleselect-status: '&6Die Spieler wählen nun ihre Fahrzeuge für folgende Map <arena>.'
+vehicleselect-timer: '&6Die Runde beginnt in &b<time> &6Sekunde(n).'
+vehicleselect-shifttip: '&aDu kannst durch Sneaken Jederzeit wieder auf die Strasse
+  zurück!'
+vehicleselect-beginingsoon: '&6Die Runde beginnt bald.'
+vehicleselect-gui-inv: "§2§lSelect your vehicle !"
+vehicleselect-gui-item: "§a§lClick to select a vehicle"
+
+stop: '&cDie Runde wurde beendet!'
+game-nomoreracers: '&cDer Start wurde auf Grund von mangelnden Spielern abgebrochen!'
+game-spectatorjoin: Du betrittst die Runde als Zuschaür
+game-finished-first: '&aDu wurdest erster!'
+game-finished-normal: '&aDu hast die letzte Runde beendet und bist auf folgendem Platz
+  gelandet #.'
+game-stats: '&6Statistiken'
+game-status: Die Spieler sind auf der Map <arena>
+game-end: '&6Die Runde ist beendet!'
+game-forcefnish: '&cDie Runde wurde beendet!'
+game-start-goodluck: '&aViel Erfolg!'
+game-passmainline-normal: '&6Runde &b<current>&6/&b<laps>&6.'
+game-passmainline-final: '&6Letzte Runde'
+game-finishtime-normal: '&6Zeit: &b<time>'
+game-finishtime-newrecord: '&aDu hast einen neün High-Score für diese Map aufgestellt:
+  &b<arena>'
+game-besttime: '&6Deine beste Zeit auf der Map &b<arena> &6ist &b<time> &6mit &b<vehicle>'
+game-title-line1: '&b<player>'
+game-title-line2: '&6hat das Rennen gewonnen!'
+game-go: '&aGo'
+game-relocate: '&c&lDeine Position wurde zurückgesetzt!'
+game-finish-actionbar: '&b<player> &6hat die Ziellinie erreicht!'
+game-win: '&b<player> &6hat die Runde gewonnen auf der Map &b<arena>'
+game-compass-name: '&6Teleport Kompass'
+game-compass-lore: '&7Klicke um dich zu teleportieren'
+game-leaveitem-name: '&cSpiel verlassen'
+game-leaveitem-lore: '&7Klicke um das Spiel zu verlassen'
+game-board-header: '&dRacers'
+game-board-position: '&6Position:'
+game-board-spectator: Zuschaür
+game-board-item: '&6Item:'
+game-board-ranking: '&6Ranking:'
+game-board-laps: '&b<current>&6/&b<laps>'
+game-tabheader: '&f&lMob&2&lRacers &f&l>'
+game-tabfooter: '&6Ingame: &b<players> &6| Zuschaür: &b<spectators>'
+command-invalid-permission: '&fUnbekannter Befehl.'
+command-invalid-sender: '&cInvalid command sender.'
+command-invalid-argument: '&cInvalid argument(s).'
+command-invalid-selection: '&cYour selection with the wand is invalid.'
+command-invalid-player: '&cThis player is not valid.'
+command-open: '&aThe game is now open ! Type &f/mobracers &ato join !'
+command-close: '&cThe game has been temporarily closed by a staff member.'
+command-usage: Usage
+command-blocked-in-game: '&fUnbekannter Befehl.'
+command-achievement-list-todo: 'This is the list of achievements to do (Hover):'
+command-achievement-list-others: To look at your finished achievements, do /mr achievement finished
+command-achievement-list-done: Here is the list of completed achievements (Hover)
+command-achievement-nothingdone: '&cYou did not finish any achievement.'
+command-achievement-alldone: Well done you completed all the achievements !
+command-arena-help-menu: '&e&lArena help menu &fPage <page> of <max>'
+command-arena-help-next: '&6Next page: &f/mr arena help <next>'
+command-arena-help-nonext: '&6This is the last page.'
+command-arena-help-list-info: '&aShow the list of arenas:'
+command-arena-help-create-info: 'Create a new arena:'
+command-arena-help-delete-info: 'Delete an arena:'
+command-arena-help-info-info: 'Show the informations of an arena:'
+command-arena-help-list-command: '&f/mr arena list'
+command-arena-help-create-command: '&f/mr arena create <name>'
+command-arena-help-delete-command: '&f/mr arena delete <arena>'
+command-arena-help-info-command: '&f/mr arena info <arena>'
+command-arena-help-spawn-add-info: '&aAdd a new start point at your position:'
+command-arena-help-spawn-remove-info: '&aDelete a start point at your position:'
+command-arena-help-spawn-reset-info: '&aReset the start points:'
+command-arena-help-spawn-show-info: '&aShow all the start points:'
+command-arena-help-spawn-add-command: '&f/mr arena addspawn <arena>'
+command-arena-help-spawn-remove-command: '&f/mr arena delspawn <arena>'
+command-arena-help-spawn-reset-command: '&f/mr arena resetspawns <arena>'
+command-arena-help-spawn-show-command: '&f/mr arena showspawns <arena>'
+command-arena-help-item-add-info: '&aAdd an item at your location(banner):'
+command-arena-help-item-remove-info: '&aDelete an item at your location:'
+command-arena-help-item-reset-info: '&aReset all the item:'
+command-arena-help-item-show-info: '&aShow the items:(You will need to remove them
+  manually after)'
+command-arena-help-item-add-command: '&f/mr arena additem <arena>'
+command-arena-help-item-remove-command: '&f/mr arena delitem <arena>'
+command-arena-help-item-reset-command: '&f/mr arena resetitems <arena>'
+command-arena-help-item-show-command: '&f/mr arena showitems <arena>'
+command-arena-help-spectator-add-info: '&aAdd a spectator point at your location:'
+command-arena-help-spectator-remove-info: '&aRemove a spectator point at your location:'
+command-arena-help-spectator-reset-info: '&aReset the spectators points:'
+command-arena-help-spectator-show-info: '&aShow the spectators points:'
+command-arena-help-spectator-add-command: '&f/mr arena addspectator <arena>'
+command-arena-help-spectator-remove-command: '&f/mr arena delspectator <arena>'
+command-arena-help-spectator-reset-command: '&f/mr arena resetspectators <arena>'
+command-arena-help-spectator-show-command: '&f/mr arena showspectators <arena>'
+command-arena-help-jukebox-add-info: '&aAdd a (virtual) jukebox at your location:'
+command-arena-help-jukebox-remove-info: '&aRemove a jukebox at your location:'
+command-arena-help-jukebox-reset-info: '&aReset jukeboxes:'
+command-arena-help-jukebox-play-info: '&aPlay music to the jukeboxes:'
+command-arena-help-jukebox-add-command: '&f/mr arena addjukebox'
+command-arena-help-jukebox-remove-command: '&f/mr arena deljukebox'
+command-arena-help-jukebox-reset-command: '&f/mr arena resetjukeboxes'
+command-arena-help-jukebox-play-command: '&f/mr arena playjukeboxes'
+command-arena-help-line-add-info: '&aAdd a race line(wand): Line #0 is the finish
+  line.'
+command-arena-help-line-remove-info: '&aDelete a line (with the ID):'
+command-arena-help-line-reset-info: '&aReset lines:'
+command-arena-help-line-teleport-info: '&aTeleport to a line (with the ID):'
+command-arena-help-line-test-info: '&aTest all the lines:'
+command-arena-help-line-add-command: '&f/mr arena addline <arena> [ID]'
+command-arena-help-line-remove-command: '&f/mr arena addline <arena> <ID>'
+command-arena-help-line-reset-command: '&f/mr arena resetlines <arena>'
+command-arena-help-line-teleport-command: '&f/mr arena tpline <arena> <ID>'
+command-arena-help-line-test-command: '&f/mr arena testlines <arena>'
+command-arena-help-region-info: '&aSet the region(wand):'
+command-arena-help-region-command: '&f/mr arena setregion <arena>'
+command-arena-help-weather-info: '&aSet the weather: time in ticks, day-cycle and
+  rain are trü or false'
+command-arena-help-weather-command: '&f/mr arena weather <arena> <time> <day-cycle>
+  <rain>'
+command-arena-help-author-info: '&aChange the arena author:'
+command-arena-help-author-command: '&f/mr arena setauthor <arena> <author>'
+command-arena-help-laps-info: '&aSet the number of laps: (0 = sprint race)'
+command-arena-help-timelimit-info: '&aSet the time limit:'
+command-arena-help-itemregendelay-info: '&aSet the item regeneration time:'
+command-arena-help-speedmodifier-info: '&aSet the speed bonus/penalty on a material:'
+command-arena-help-laps-command: '&f/mr arena setlaps <arena> <#>'
+command-arena-help-timelimit-command: '&f/mr arena setlimit <arena> <time>'
+command-arena-help-itemregendelay-command: '&f/mr arena setregendelay <arena> <delay>'
+command-arena-help-speedmodifier-command: '&f/mr arena setspeed <arena> <materialID[:data]>
+  <speed>'
+command-arena-help-deathzone-add-info: '&aAdd a death zone with Wand teleporting the
+  players to the track when going into it:'
+command-arena-help-deathzone-add-command: '&f/mr arena adddeathzone <arena>'
+command-arena-help-deathzone-remove-info: '&aRemove all death zones you are standing
+  in:'
+command-arena-help-deathzone-remove-command: '&f/mr arena deldeathzone <arena>'
+command-arena-help-deathzone-reset-info: '&aReset all the death zones:'
+command-arena-help-deathzone-reset-command: '&f/mr arena resetdeathzones <arena>'
+command-arena-help-deathzone-test-info: '&aTell you in how much deathzones you are
+  standing in:'
+command-arena-help-deathzone-test-command: '&f/mr arena testdeathzones <arena>'
+command-arena-invalidarena: '&cInvalid Arena. /mr arena list'
+command-arena-list-list: 'Here is the arena list:'
+command-arena-list-noarena: '&cThere''s not any arena.'
+command-arena-info-head: Infos for arena <arena>
+command-arena-info-breaklines: 'Lines: &e#'
+command-arena-info-weather: 'Time: &e<time> ticks &7| &fTime cycle: <time-locked>
+  &7| &fRain: <raining>'
+command-arena-info-lapsandtimelimit: 'Laps: &e<laps> &7| &fTime limit: &e<time-limit>
+  secondes'
+command-arena-info-spawnsanditems: 'Start points: &e<spawns> &7| &fItems: &e<items>'
+command-arena-info-region: 'Region correct: <region>'
+command-arena-info-jukeboxes: 'Jukeboxe(s): &e#'
+command-arena-info-spectators: 'Spectator point(s): &e#'
+command-arena-info-deathzones: 'Deathzone(s): &e#'
+command-arena-info-itemregendelay: 'Regeneration delay for items: &e<delay>'
+command-arena-info-roadspeed-normal: 'Speed modifier(s) relative to the road:'
+command-arena-info-roadspeed-empty: None
+command-arena-info-ready: '&aThe arena is ready to be played on !'
+command-arena-info-notready: '&cThe arena isn''t ready for the following reasons:'
+command-arena-info-notready-nospawns: '  &eThe arena need spawn points at the start
+  of the race to play.'
+command-arena-info-notready-nospectators: '  &eThe arena need at least a spectator
+  point for the people joining during a game and the finished players.'
+command-arena-info-notready-nolines: '  &eThe arena need at least 2 lines to be functionnal.
+  (Only 2 is strongly discouraged)'
+command-arena-info-notready-noregion: '  &eThe arena need a region containing all
+  the arena.'
+command-arena-info-notready-badregion: '  &eYour region excludes somes things inside
+  the arena. Verify your lines, your start points and your spectator points.'
+command-arena-new-alreadycreated: '&cThis arena already exists.'
+command-arena-new-done: The arena have been created properly.
+command-arena-weather-done: The arena weather have been updated.
+command-arena-racesettings-done: The arena setting have been updated.
+command-arena-author-done: The author of this arena have been changed.
+command-arena-breakline-add: The race line have been added.
+command-arena-breakline-remove: The race line have been removed.
+command-arena-breakline-teleport: You've been teleported to the specified line.
+command-arena-breakline-reset: The lines have been resetted.
+command-arena-addspawn: The start point have been added.
+command-arena-removespawn: The start point have been removed.
+command-arena-removespawn-fail: There's not any start point to remove near your location.
+command-arena-resetspawns: The start points have been resetted.
+command-arena-showspawns: Armor stands have been placed on the start points.
+command-arena-addspectator: The spectator point have been added.
+command-arena-removespectator: The spectator point have been removed.
+command-arena-removespectator-fail: There's not any spectator point to remove near your location.
+command-arena-resetspectators: The spectator points have been resetted.
+command-arena-showspectators: Armor stands have been placed on the spectator points.
+command-arena-addjukebox: The jukebox location have been added.
+command-arena-removejukebox: The jukebox location have been removed.
+command-arena-removejukebox-fail: There's not any jukebox to remove near your location.
+command-arena-resetjukeboxes: The jukeboxes have been resetted.
+command-arena-playjukeboxes: A music is playing on the jukeboxes.
+command-arena-additem: The item location have been added.
+command-arena-removeitem: The item location have been removed.
+command-arena-removeitem-fail: There's not any item location to remove near your location.
+command-arena-resetitems: The items have been resetted.
+command-arena-showitems: The item banners have been placed at their locations.
+command-arena-setspeedmodifier: The speed have been set for this type of material.
+command-arena-ride-nobreakline: '&cThere''s not any line to teleport you.'
+command-arena-regionset: The arena region have been set.
+regionwarning: Please note that the area is not selected with WorldEdit but only with wooden axe. Commands like //pos1, //pos2 or //expand will not work with the region.
+command-arena-delete-done: The arena have been deleted.
+command-arena-delete-failed: The arena could not be deleted.
+command-arena-adddeathzone: A death zone has been added.
+command-arena-removedeathzone: '# death zone(s) has/have been removed.'
+command-arena-resetdeathzones: Death zones have been reset.
+command-arena-testdeathzones: 'You are standing inside of # death zones.'
+
+command-arena-icon-set: "The icon for this arena has been set."
+command-arena-icon-noitem: "You need to have an item in your hand to set the icon of an arena."
+
+command-arenastats-notready: Sorry, arena rankings are not ready for the moment.
+command-arenastats-noargs: Please type the arena name you want to check the ranking.
+command-arenastats-header: '&f&lArena ranking of &a&l<arena>'
+command-arenastats-entry: '<pos>: &a<player> &eTime: &f<time> &eVehicle: &f<vehicle>'
+command-arenastats-self: '&6&lYour position: &f<pos> / <total> &3&lTime: &f<time>
+  &2&lVehicle: &f<vehicle>'
+command-arenastats-invalidarena: Sorry but this arena dösn't exist or has never been played.
+command-config-menu: '&e&lSetup menu:'
+command-config-menu-warning: Note that some settings are only editable from the config.yml file in the plugin folder.
+command-config-menu-pointcoefficient: '&ePoints awarded: &f#%'
+command-config-menu-commandlist: '&eList of allowed in game commands:'
+command-config-menu-location: '&a(World: &f<world>&a, X: &f<x>&a, Y: &f<y>&a, Z: &f<z>&a)'
+command-config-menu-defined: '&aSet'
+command-config-menu-undefined: '&cNot set'
+command-config-menu-lobby: '&eLobby: <status>'
+command-config-menu-exit: '&eExit: <status>'
+command-config-menu-region: '&eLobby region: <status>'
+command-config-menu-vehicles: '&eLobby vehicles: <status>'
+command-config-menu-help: '&aHelp command: &f/mr setup help'
+command-config-menu-ready: '&aYour setup for MobRacers is complete.'
+command-config-menu-almostready: '&aYour lobby setup is ready but you need a working
+  arena to play.'
+command-config-menu-notready: '&cYour setup is not ready for the following reasons:'
+command-config-menu-notready-badregion: Your lobby region should contains all the vehicles locations and the lobby and must not contains the exit.
+command-config-menu-notready-noregion: Your lobby region is not set. /mr setup setregion
+command-config-menu-notready-nolobby: Your lobby location is not set. /mr setup setlobby
+command-config-menu-notready-nöxit: Your exit location is not set and you didn't configured the plugin for it to be in auto-join or to keep player states. /mr setup setexit
+command-config-menu-notready-novehicles: You need to have at least one vehicle set in the lobby order to play the game.
+command-config-help1: '&6&lGame setup help:'
+command-config-help2: '&eSet lobby location: &f/mr setup setlobby'
+command-config-help3: '&eSet exit lovation: &f/mr setup setexit'
+command-config-help4: '&eSet lobby region (wand): &f/mr setup setregion'
+command-config-help5: '&eSet a vehicle location: &f/mr setup setvehicle [vehicle]'
+command-config-help6: '&eLook at the vehicle list: &f/mr setup vehiclelist'
+command-config-lobbyset: The game lobby have been set.
+command-config-lobbynotset: You can't teleport to the lobby because it is not set.
+command-config-exitset: The game exit have been set.
+command-config-exitnotset: You can't teleport to the exit because it is not set.
+command-config-regionset: The game region have been set.
+command-config-vehicleset: The vehicle in the lobby have been set.
+command-config-invalidvehicle: '&cThis vehicle is not supported/invalid.'
+command-config-vehiclelist: 'Here are the available vehicles:'
+command-info-title: '&fHelp:'
+command-info-command-join: '&a&lJoin the game: &f/mr join'
+command-info-command-leave: '&c&lLeave the game: &f/mr leave'
+command-info-command-vote: '&e&lVote for an arena: &f/mr vote <arena>'
+command-info-command-stats: '&3&lYour stats: &f/mr stats'
+command-info-command-achievements: '&d&lYour achievements: &f/mr achievement'
+command-info-command-ranking: '&9&lArena ranking: &f/mr ranking <arena>'
+command-info-command-buy: '&6&lThe in-game shop: &f/mr buy'
+command-info-command-arena: '&4&lArena config: &f/mr arena'
+command-info-command-config: '&7&lGame setup: &f/mr setup'
+command-info-command-version: '&a&lVersion: &f/mr version'
+command-reload-done: '&aBoth config.yml and lang.yml have been reloaded.'
+command-reload-error: '&cAn internal error occured while trying to reload MobRacers.'
+command-stats-header: '&aStatistiken'
+command-stats-victories: '&6Wins:'
+command-stats-gamesplayed: '&6Games:'
+command-stats-bestvehicle: '&6Meist gespiletes Fahrzeug:'
+command-stats-bestvehicle-gamesplayed-hover: Games
+command-stats-items: '&6Items:'
+command-stats-passings: '&6Runden:'
+command-stats-points: '&6Punkte:'
+command-stats-score: '&6Score:'
+command-buy-invalidpurchase: '&cDiese Sache kannst du nicht kaufen!.'
+command-buy-list: Hier ist eine Liste von Dingen, die du kaufen kannst.
+command-buy-nothingleft: Du hast schon alles gekauft!
+command-vote-cantvotenow: '&cDu kannst nicht mehr Voten.'
+command-vote-cantoutofgame: '&cDu kannst nur InGame voten'
+command-vote-usage-arena: <arena>
+achievement-complete: '&aDu hast eine Erungeschaft erziehlt:'
+achievement-victories-desc: 'Gewinne # Rennen'
+achievement-victories-name-7: Gott
+achievement-victories-name-6: Legende
+achievement-victories-name-5: Experte
+achievement-victories-name-4: Pro
+achievement-victories-name-3: Advanced
+achievement-victories-name-2: Rookie
+achievement-victories-name-1: Newbie
+achievement-gamesplayed-desc: 'Fahre # Rennen'
+achievement-gamesplayed-name-7: Junkie
+achievement-gamesplayed-name-6: Suchti
+achievement-gamesplayed-name-5: Wahrsinniger
+achievement-gamesplayed-name-4: Fan
+achievement-gamesplayed-name-3: Amateur
+achievement-gamesplayed-name-2: Anfänger
+achievement-gamesplayed-name-1: Erstes Rennen
+achievement-cavespider-desc: 'Gewinne # Rennen mit der Spinne'
+achievement-cavespider-name: Spider Maniac
+achievement-cavespider-unlock: '&aDu hast nun die Höhlenspinne freigeschaltet'
+achievement-donkey-desc: 'Fahre # Runden mit einem Pferd'
+achievement-donkey-name: Jockey
+achievement-donkey-unlock: '&aDu hast nun den Esel freigeschaltet'
+achievement-elderguardian-desc: 'Gewinne # Rennen mit dem Guardian'
+achievement-elderguardian-name: Sea King
+achievement-elderguardian-unlock: '&aDu hast nun den Elder Guardian freigeschaltet'
+achievement-magmacube-desc: 'Habe deine beste Zeit mit dem Slime auf # Maps'
+achievement-magmacube-name: Sticky records
+achievement-magmacube-unlock: '&aDu hast nun den Magma Cube freigeschaltet'
+achievement-mushroomcow-desc: 'Spiele # Rennen mit der Kuh'
+achievement-mushroomcow-name: Moo !!!
+achievement-mushroomcow-unlock: '&aDu hast nun die Pilzkuh freigeschaltet'
+achievement-silverfish-desc: 'Bekomme # in einem Rennen'
+achievement-silverfish-name: Forever mor items
+achievement-silverfish-unlock: '&aDu hast nun den Silberfisch freigeschaltet'
+achievement-supersheep-desc: 'Habe deine Beste Zeit mit dem Schaf auf # Maps'
+achievement-supersheep-name: Wool records
+achievement-supersheep-unlock: '&aDu hast nun das Super Schaf freigeschaltet'
+achievement-block-desc: Baue eine Map und spiele darauf
+achievement-block-name: Nice builder
+achievement-block-unlock: '&aDu hast nun das Block-Fahrzeug freigeschaltet'
+achievement-discmellohi-desc: 'Gewinne # Rennen mit einem untoten Pferd'
+achievement-discmellohi-name: Frankenstein
+achievement-discmellohi-unlock: '&aDu hast nun Disk 6 freigeschaltet'
+achievement-discstal-desc: 'Fahre # Runden mit dem Schwein'
+achievement-discstal-name: Curly Tail
+achievement-discstal-unlock: '&aDu hast nun Disk 7 freigeschaltet'
+achievement-discwait-desc: '&7Spiele # Rennen mit dem Wolf'
+achievement-discwait-name: Friends for life !
+achievement-discwait-unlock: '&aDu hast nun Disk 10 freigeschaltet'
+item-fakeitem: Fake Item
+item-groundpound: Erdbeben
+item-missile: Missile
+item-shield: Schutzschild
+item-sugar: Speed Boost
+item-wall: Wand
+item-bomb: Bombe
+item-grapplinghook: Grappling Hook
+item-cloud: Gewitterwolke
+item-fireball: Fireball
+item-special-cow: Cow Rush
+item-special-guardian: Ocean Terror
+item-special-donkey: Fat Butt
+item-special-pig: Mudbath
+item-special-wolf: Rage
+item-special-chicken: Egg Cannon
+item-special-horse: Knight
+item-special-undeadhorse: Zombification
+item-special-skeletonhorse: Bone Bow
+item-special-slime: Sticky Trap
+item-special-magmacube: Ghost Rider
+item-special-ocelot: Pampering
+item-special-spider: Slingshot
+item-special-cavespider: Venom
+item-special-squid: Darkness
+item-special-supersheep: Rainbow
+item-special-sheep: Chop Chop Chop
+item-special-mushroomcow: Corruption
+item-special-silverfish: Thief
+item-special-rabbit: Super-Jump
+item-special-babycow: Moomoo Milk
+item-special-elderguardian: Frozen Cage
+item-special-minecart: Mega-Pickaxe
+item-special-block: Build Master
+item-special-wolf-title: '&4Schlage einen Gegner um deine Hunde zu fokosieren.'
+item-special-rabbit-title: '&bMEGA JUMP'
+item-special-silverfish-title: '&cKlicke auf ein anderes Fahrzeug um es zu klauen!'
+purchase-vehicle: '&aFahrzeuge'
+purchase-vehicle-done: '&6Du hast dir dieses Fahrzeug gekauft &d<product>'
+purchase-music: '&aDisks'
+purchase-music-done: '&6Du hast dir diese Disk gekauft &d<product>'
+purchase-notenoughtmoney: '&cDu hast zu wenig Geld um dir diesen Gegenstand zu kaufen.'
+purchase-alreadypurchased: '&cDu hast das schon gekauft.'
+purchase-clicktobuy: '&7Zum Kaufen klicken'
+purchase-notenoughttobuy: '&cDu hast nicht genügend Punkte'
+purchase-price: '&6Preis: &b<price>'
+purchase-cat: Cat
+purchase-blocks: Blocks
+purchase-chirp: Chirp
+purchase-far: Far
+purchase-mall: Mall
+purchase-mellohi: Mellohi
+purchase-stal: Stal
+purchase-strad: Strad
+purchase-ward: Ward
+purchase-wait: Wait
+points-add: '&b+# &6Punkte'
+points-remove: '&c-# &6Punkte'
+record-cat: '&cDisk 1'
+record-blocks: '&cDisk 2'
+record-chirp: '&cDisk 3'
+record-far: '&cDisk 4'
+record-mall: '&cDisk 5'
+record-mellohi: '&cDisk 6'
+record-stal: '&cDisk 7'
+record-strad: '&cDisk 8'
+record-ward: '&cDisk 9'
+record-wait: '&cWarte Musik'
+record-nomusic: '&4Keine Musik'
+record-lore: '&7Klicke um die Musik zu ändern'
+vehicle-cavespider-name: Cave Spider
+vehicle-cavespider-desc: '&7Ein Biss kann dein Leben verändern'
+vehicle-cow-name: Kuh
+vehicle-cow-desc: '&7Gönn dir Milch'
+vehicle-donkey-name: Esel
+vehicle-donkey-desc: '&7Benutze dein Schwergewicht'
+vehicle-elderguardian-name: Elder Guardian
+vehicle-elderguardian-desc: '&7Weiße Wahl, mein Freund'
+vehicle-guardian-name: Guardian
+vehicle-guardian-desc: '&7Schaue der Wahrheit ins Gesicht.'
+vehicle-horse-name: Pferd
+vehicle-horse-desc: '&7Reite wie ein Ritter durch die Nacht'
+vehicle-magmacube-name: Magma Cube
+vehicle-magmacube-desc: '&7Schaue den Flammen ins Geschicht.'
+vehicle-minecart-name: Minecart
+vehicle-minecart-desc: '&7Learn how dto dig.'
+vehicle-mushroomcow-name: Pilzkuh
+vehicle-mushroomcow-desc: '&7Bereit für deine magic Mushrooms?'
+vehicle-ocelot-name: Katze
+vehicle-ocelot-desc: '&7Frischer Fish gefällig?'
+vehicle-pig-name: Schwein
+vehicle-pig-desc: '&7Drecksschwein.'
+vehicle-rabbit-name: Hase
+vehicle-rabbit-desc: '&7Wer kann hier schon nein sagen?'
+vehicle-sheep-name: Schaf
+vehicle-sheep-desc: '&7Mach dich bereit geschert zu werden!'
+vehicle-silverfish-name: Silberfisch
+vehicle-silverfish-desc: '&7Er ist überall!'
+vehicle-skeletonhorse-name: Skelett Pferd
+vehicle-skeletonhorse-desc: '&7Du findest den Sieg in deiner Seele!'
+vehicle-slime-name: Slime
+vehicle-slime-desc: '&7Schleime dich bei deinen Gegnern ein.'
+vehicle-spider-name: Spinne
+vehicle-spider-desc: '&7Jeder hat Angst vor ihr!?'
+vehicle-squid-name: Tintenfisch
+vehicle-squid-desc: '&7Squids? SQUIDS!!!!!'
+vehicle-supersheep-name: Super Schaf
+vehicle-supersheep-desc: '&7Willste nen Regenbogen voller Gewinne?'
+vehicle-undeadhorse-name: Zombie Pferd
+vehicle-undeadhorse-desc: '&7kein Tod stoppt es!'
+vehicle-wolf-name: Hund
+vehicle-wolf-desc: '&7Des Menschen bester Freund.'
+vehicle-chicken-name: Hünchen
+vehicle-chicken-desc: '&7Sei kein feiges Huhn'
+vehicle-block-name: Block
+vehicle-block-desc: '&7Hast du damit schonmal was gebaut ?'
+vehicle-babycow-name: Baby Kuh
+vehicle-babycow-desc: '&7Nimm dir ein Glas voll Milch!'
+sign-header: '&f&lMob&2&lRacers'
+sign-join: '&a&lJoin'
+sign-leave: '&4&lLeave'
+sign-stats: '&9&lStats'
+sign-arenastats: '&6&lRanking'
+sign-info: '&lInfo'
+sign-buy: '&3&lBuy'
+sign-vote: '&e&lVote'
+sign-achievement: '&d&lAchievements'
+sign-click: '&8(Click)'
+wand: '&aPosition # set at &f(<x>, <y>, <z>)'
+number-separator: ','
+update-notification: '&aA new version is available ! Type &f/mr version &afor more
+  infos.'
+command-config-menu-notready-noexit: Your exit location is not set and you didn't configured the plugin for it to be in auto-join or to keep player states. /mr setup setexit
+join-gameclosed: '&cThe game is closed.'
+standby-notenoughtplayerstocontinue: '&cThere are not enough players to continue.'
+command-config-help7: '&eRemove a vehicle: &f/mr setup removevehicle'
+command-config-help8: '&eReset vehicles: &f/mr setup resetvehicles'
+command-config-help9: '&eSpawn the vehicles: &f/mr setup testvehicles'
+command-config-help10: '&eDespawn the vehicles: &f/mr setup killvehicles'
+command-config-help11: '&eTeleport to a vehicle: &f/mr setup tpvehicles'
+command-config-help12: '&eShow plugin permissions: &f/mr setup permissions'
+command-config-removevehicle: '&aThe vehicle has been successfully removed.'
+command-config-permission-play: '&eMobRacers.play &fTo play &aDefault'
+command-config-permission-vote: '&eMobRacers.vote &fTo vote &aDefault'
+command-config-permission-vip-full: '&eMobRacers.vip &fVip full access &aOP'
+command-config-permission-vip-vehicle: '&eMobRacers.vip.<vehicle> &fVip access for
+  a vehicle &aOP'
+command-config-permission-vip-music: '&eMobRacers.vip.<disc> &fVip access for a disc
+  &aOP'
+command-config-permission-staff: '&eMobRacers.staff &fArena creation & moderation
+  &aOP'
+command-config-permission-admin: '&eMobRacers.admin &fAll MobRacers permissions &aOP'
+command-config-permission-cmdbypass: '&eMobRacers.command-protect-bypass &fBypass
+  commands &aOP'
+command-config-permission-autojoinbypass: '&eMobRacers.autojoin-bypass &fBypass auto-join
+  &aNot default'
+command-config-permission-allunlocked: '&eMobRacers.unlock-all &fUnlock all in-game
+  content &aNot default'
+command-vote-list: '&aAvailable arenas: &f(/vote <arena>)'
+command-vote-hover: '&9Vote for &f<arena>&9 by &f<author>'
+item-cloud-title: '&cPunch a player to give him your cloud !'
+command-config-help13: "&eSet item to leave: &f/mr setup setleaveitem §a(In you hand)"
+command-config-help14: "&eSet item to select arena: &f/mr setup setarenaitem"
+command-config-help15: "&eSet item to select vehicle: &f/mr setup setvehicleitem"
+command-config-help16: "&eSet item to spectate: &f/mr setup setspectatoritem"
+command-config-itemset: "§aThe item has been set. To see the change, please join the game."
+command-config-noitem: "§cYou need to hold an item in your hand to set it."
