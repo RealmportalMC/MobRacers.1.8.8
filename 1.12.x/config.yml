@@ -1,0 +1,163 @@
+#
+#Hi and welcome to MobRacers configuration
+#If you want to regen this file, just delete it and reload the plugin
+#
+
+#base-speed is the base-speed of all the vehicles, warning a too high value may cause bugs
+#I really recommend letting speed to 1.0 for perfect user experience
+#The points given to all the players when finished a race a multiplied by the point coefficient so you can control the economy
+#scoreboard-update-period is the time between each scoreboard updates during the game
+base-speed: 1.0
+point-coefficient: 1.0
+scoreboard-update-period: 1
+
+#The duration of the different timers in the game
+#arena-selection-timer is when the players vote for their favorite arena
+#vehicle-selection-timer is when the players vote for their favorite arena
+#fireworks-timer is at the end of the game when the winner is announced
+arena-selection-timer: 45
+vehicle-selection-timer: 30
+fireworks-timer: 5
+
+#This is the weather of the lobby
+#time-locked is to lock the normal cycle of the time
+#It doesn't change the world's time, it's only affecting the client
+#Raining on a cold biome will make snow
+time: 6000
+time-locked: true
+raining: false
+
+#Their name explains pretty much what they do,
+#Disabling the stats will prevent the plugin from using userdatas, it is recommended for large Bungee Networks with multiples MobRacers servers
+#Disable music if you don't like music but it hasn't any other effect
+#The rotation is what making the game restaring over and over. Disable it if you want players to leave after the game
+enable-stats: true
+enable-music: true
+enable-rotation: true
+
+#Do you want to integrate Vault's economy system into MobRacers ?
+#Setting true even if you do not have vault won't cause problems but I do not recommend it
+enable-vault: false
+
+#This option makes MobRacers change the server MOTD to the current MobRacers status
+#MOTDs are configurable in the lang file using the lines standby-status, arenaselect-status, vehicleselect-status and game-status
+#This can be really useful if you plan to do a big networks with multiples MobRacers server
+#and you need to show the current status of servers.
+enable-motd: false
+
+#The invitation message is a message sent to the players of the server when a player join the game and there's not enough players to begin.
+#Broadcast-worlds are the worlds on which players will receive the invitation-message and the win message. you can set a list, a single world, 'null' or '*' (* for all the worlds)
+invitation-message: false
+broadcast-worlds: 'null'
+
+#The auto-join mode permit players to join instantly the game when joining the server.
+#Optimal for BungeeCord networks MobRacers alone in a whole server
+#Players with the admin permission (MobRacers.admin) are not automatically put in game and they can leave with the command
+#
+#The teleport-join mode permit players to join the game when they are teleported in the region and leave the game when they are teleported out
+#Perfect for Multiverse servers with portals to join games
+#Players with the admin permission (BlockFarmers.admin) are not automatically put in game when they are teleported in the region
+auto-join: false
+teleport-join: true
+
+#You don't have to set this unless you don't use auto-join
+#This is the server in a Bungee Network all players will be sent in the end of the game
+#if you disabled the rotation or when leaving the game normally
+exit-server: 'hub'
+
+#If you enable this, people in game will have their name green in the player list and they will have a header and a footer to their player list containing infos about the game
+color-in-tab: true
+
+#This is the command-blocking feature only actived for players in-game. You can enable it or disable it and you have the list of non-blocked commands just after
+block-commands: true
+allowed-commands:
+  - blockfarmers
+  - bf
+  - farm
+  - farmers
+  - blockf
+  - bfarmers
+  - reload
+  - ban
+  - mute
+  - kick
+
+#Do you want to use displaynames or normal names ? Display names may include the ranks and essentials nicknames
+use-displaynames: false
+
+#The minimum of players cannot be less than 2 and the maximum can be whatever you want
+#You can set -1 as a max value to remove the limit
+min-players: 2
+max-players: 16
+
+#Use the end-game commands to use MobRacers with your economy ! You can set a list of commands, how much you want
+#The winner's name can be used with <first> and it's the same thing for the <second>, the <third> and the <last>
+#
+#Remove the '#'s to activate it
+#endgame-commands:
+#  - 'broadcast <last> is a newbie ! Hahaha'
+#  - 'give <first> minecraft:diamond 1'
+
+#Do you want to keep the states of your players so they will get it back when leaving the game ?
+#This option is optimal for factions servers, there's no way to use MobRacers to get life or food with this.
+#Plus, it completly keeps the inventory and exp of all players.
+#This option also permit you to not set the exit location since they are teleported back to their previous location.
+#List of things saved by this feature:
+#The location, the velocity and the fall distance
+#Inventory, Armor and Item on the cursor
+#Health, Food level, saturation and exhaustion
+#Fire ticks and remaining air
+#Gamemode, the permission to fly and the flying itself
+#Walking speed and Flying speed
+#All potion effects
+keep-player-states: false
+
+#This option enable the messages admins get when joining the server if MobRacers isn't up to date
+#I recommend letting it to true but It's all up to you
+update-notifications: true
+
+#Do you want spectators and finished players to be in gamemode spectator ?
+#However, they won't be able to use their spectators items
+gamemode-3-spectators: false
+
+#Do you want the plugin to inject new messages in your lang file when one is missing ?
+#This feature is useful to get new messages instantly without configuring them but
+#may break your file identation since the file is loaded and saved. When set to false
+#and a message is missing, it's path will be send.
+#
+#inject-from is the file you want your lang to be injected from (langFR.yml, langEN.yml, langRU.yml, langDE.yml)
+#useful when you want to get new messages from another languages than english
+inject-lang-file: true
+inject-from: "langEN.yml"
+
+#Configures MobRacers' database connection
+#Disabling the sql without disabling stats above will use Yaml userdatas to save players data
+#The plugin support almost any databse compatible with jdbc and supporting "TEXT" values
+#
+#Noticeable drivers & urls:
+#  com.mysql.jdbc.Driver
+#  jdbc:mysql://localhost:3306/yourdatabase
+#
+#  org.sqlite.JDBC
+#  jdbc:sqlite:/C:/Users/you/yourdatabase
+#
+sql-enabled: false
+sql-driver: com.example.jdbc.Driver
+sql-url: jdbc:example://localhost:3306/minecraft_db
+sql-user: mobracers_admin
+sql-password: secret
+
+#This option permit players to do MobRacers commands without the /mobracers in game
+#Example, /mr leave can be done with /leave, and it's the same for other commands.
+#It's just a redirection though, leave, vote, ranking commands aren't registered
+bind-subcommands: true
+
+#Do you want to cancel the spawning of non-vehicle mobs into your arenas ?
+#I recommend letting it to true but it's all up to you
+#Protecting the arena will prevent liquids to move, fire to spread/break blocks, sand to fall etc.
+#Really recommended since some items are doing big mess with the arena
+cancel-spawning: true
+protect-arenas-and-lobby: true
+
+#Especially for bungee, this option disables the vanilla messages on join and leave
+disable-vanilla-messages: false
